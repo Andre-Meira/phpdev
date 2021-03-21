@@ -17,17 +17,18 @@ class DB
         }
         else
         {
-            //$querry = "select * from info_User";
-            // $result = mysqli_query($connect,$querry);
-            //return mysqli_fetch_all($result)[0];
             return $connect;
         }
     }
-
     public static function select_get($connect) 
     {
-        $get_Table = $_GET["table"];
-        $result = mysqli_query(self::connnet_DB(), "select * from $get_Table");
+        $result = mysqli_query($connect, "select * from info_User;");
         return mysqli_fetch_all($result)[0];
+    }
+    public static function insert_Valor($connect, $User, $Password, $table)
+    {
+        $Query = "insert into $table value (default, '$User', '$Password')";
+        mysqli_query($connect, $Query);
+        return "Insert Sucess!!";
     }
 }
