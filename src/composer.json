@@ -1,0 +1,19 @@
+{
+    "name": "systemlog/mvc",
+    "description": "Estudos em PHP e MVC",
+    "authors": [
+        {
+            "name": "Andre-Meira",
+            "email": "andremeira.dev@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\":"../app/",
+            "Src\\":"../src/"
+
+        }
+    }
+
+}
