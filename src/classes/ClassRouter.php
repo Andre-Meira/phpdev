@@ -17,6 +17,7 @@ Class ClassRouter
         
         //Rotas;
         $this->Rota=array(
+            ""=>"ControllerHome",
             "home"=>"ControllerHome",
             "login"=>"ControllerLogin",
             "cadastro"=>"ControllerCadastro"
